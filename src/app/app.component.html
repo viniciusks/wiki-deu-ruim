@@ -1,4 +1,4 @@
-<div class="gap-2 grid grid-cols-12">
+<div class="grid grid-cols-12 gap-2">
     <div
         id="sidebar"
         class="col-span-2 h-screen bg-blue-700 p-sm text-blue-100"
@@ -7,13 +7,18 @@
             <p>Wiki Cenário RPG Deu Ruim</p>
         </div>
         <div class="pb-1">
-            <app-button-link-internal [routerLink]="'/'" [value]="'Tela Inicial'"></app-button-link-internal>
+            <app-button-link-internal
+                [faIcon]="faHome"
+                [routerLink]="'/'"
+                [value]="'Tela Inicial'"
+            ></app-button-link-internal>
         </div>
         <div class="pb-1">
-            <app-button-link-internal [routerLink]="'/'" [value]="'Tela Inicial'"></app-button-link-internal>
-        </div>
-        <div class="pb-1">
-            <app-button-link-internal [routerLink]="'/'" [value]="'Tela Inicial'"></app-button-link-internal>
+            <app-button-link-internal
+                [faIcon]="faUser"
+                [routerLink]="'/'"
+                [value]="'Tela Inicial'"
+            ></app-button-link-internal>
         </div>
     </div>
     <div id="main-router" class="col-span-10 p-sm">

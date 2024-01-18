@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core'
 import { Router } from '@angular/router'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
     selector: 'app-button-link-internal',
@@ -9,6 +10,7 @@ import { Router } from '@angular/router'
 export class ButtonLinkInternalComponent implements OnInit {
     @Input() value = ''
     @Input() routerLink = ''
+    @Input() faIcon = faHome
 
     constructor(private _router: Router) {}
 
